@@ -87,7 +87,7 @@ const CustomForm = (props: any) => {
 };
 
 const MailChimps = () => {
-    const postUrl = `https://gmail.us17.list-manage.com/subscribe/post?u=a93fa89e01904330c02f7a231&id=04a6c91663`;
+    const postUrl = process.env.REACT_APP_MAILCHIMP_URL ?? "";
 
     return (
         <MailchimpSubscribe
